@@ -1,0 +1,300 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+}
+section {
+    background-color: black;
+}
+
+#proyectos { 
+    
+    background: url(/source/imágenes/background-image.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hero {
+    background-color: #1c1d25;
+    height: 100vh; 
+    color: antiquewhite;
+    font-size: 30px;
+    min-height: 100vh;
+    background: url(/source/imágenes/galaxy.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: #1c1d25;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h2 {
+    font-size: 20px;
+    font-weight: 200;
+}
+footer p {
+    font-size: 16px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    width: 400px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    text-decoration: none;
+}
+
+li:hover {
+    color: #04517a;
+}
+
+li:active {
+    color: #416e86;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 26px;
+    color: antiquewhite;
+    font-weight: 600;
+}
+
+
+
+h3 {
+    color: antiquewhite;
+}
+
+p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.subtexto {
+    font-size: 15px;
+    font-weight: 300;
+    color: antiquewhite;
+}
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    width: 190px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #04517a;
+    font-weight: 300;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #045c8b;
+}
+
+.button:active {
+    background-color: #416e86;
+    color: #1d2d44;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 90px;
+    margin: 5px;
+
+}
+
+.social {
+    margin: 20px;
+    margin-left: 1px;
+}
+
+.sub-sección {
+    color: antiquewhite;
+    background-color: #04517a;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.foto {
+    width: 250px;
+    border-radius: 150px;
+    margin-left: 80px;
+}
+
+.contenedor-foto {
+    display: flex;
+    align-items: center;
+}
+/* hasta acá llegué */
+.sub-sección-proyectos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.proyecto {
+    margin: 10px;
+}
+.proyecto-contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Imagen-proyecto {
+    margin-top: 25px;
+    width: 250px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.link-proyecto {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media all and (max-width: 560px) {
+    .proyecto-contenedor {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    .foto {
+       width: 140px;
+       margin: auto;
+    }
+    .hero {
+        height: 70vh;
+    }
+    .hero-area {
+        flex-direction: column;
+        padding: 10px;
+        margin: auto;
+    }
+    .hero-text {
+        padding: 20px;
+        margin-left: 1%;
+        margin-bottom: 50px;
+    }
+   .sub-sección {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 20px;
+   }
+   .socials {
+    padding-left: 1px;
+    
+   }
+
+   .Imagen-proyecto {
+    width: 160px;
+   }
+   .button {
+    width: 120px;
+    height: 36px;
+    font-weight: 250;
+    font-size: 20px;
+}
+}
+
+@media all and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: antiquewhite;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    
+    ul {
+        display: none;
+        background-color: #2b2d3a;
+        margin: 0px;
+    }
+    
+    ul.show {
+        display: block;
+    }
+ 
+    .contenedor-foto {
+        align-items: center;
+    }
+    .foto {
+        margin: auto;
+    }
+    .Imagen-proyecto {
+        width: 220px;
+       }
+    .sub-sección {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .logo {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2d3a;
+    }
+    
+}
